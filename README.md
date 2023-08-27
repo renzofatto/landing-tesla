@@ -1,4 +1,6 @@
-# 🧞 Commands
+# Clon of the Landing page of Tesla
+
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 

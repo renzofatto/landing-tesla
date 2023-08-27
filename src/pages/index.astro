@@ -2,27 +2,43 @@
 import Layout from '../layouts/Layout.astro';
 import LandingHeader from '../components/LandingHeader.astro';
 import HeroSection from '../components/HeroSection.astro';
-import ChargeSection from '../components/ChargeSection.astro';
+import ModelY from '../components/ModelY.astro';
+import ModelX from '../components/ModelX.astro';
+import ModelS from '../components/ModelS.astro';
+import Model3 from '../components/Model3.astro';
+import Powerwall from '../components/Powerwall.astro';
+import Carga from '../components/Carga.astro';
 ---
 
 <Layout title="Tesla - Clon">
 
 	<LandingHeader/>
 
-	<main class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-smooth">
+	<main
+		class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
+	>
 		<div class="snap-center">
-			<ChargeSection />
+			<HeroSection>
 		</div>
-		<div class="snap-center">
-			<HeroSection />
+		<div id="modelX" class="snap-center">
+			<ModelX />
+		</div>
+		<div id="modelY" class="snap-center">
+			<ModelY />
+		</div>
+		<div id="modelS" class="snap-center">
+			<ModelS />
+		</div>
+		<div id="model3" class="snap-center">
+			<Model3 />
+		</div>
+		<div id="powerwall" class="snap-center">
+			<Powerwall />
+		</div>
+		<div id="carga" class="snap-center">
+			<Carga />
 		</div>
 
-		<div class="snap-center">
-			<HeroSection />
-		</div>
-		<div class="snap-center">
-			<ChargeSection />
-		</div>
 
 	</main>
 
